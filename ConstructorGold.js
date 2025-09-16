@@ -16,12 +16,12 @@
   let started = false;
 
   // 5–10 minutos entre ciclos de construção
-  const MIN_RUN_DELAY_MS = 5 * 60 * 1000;
-  const MAX_RUN_DELAY_MS = 10 * 60 * 1000;
+  const MIN_RUN_DELAY_MS = 12 * 1000;  // 12–18s
+  const MAX_RUN_DELAY_MS = 18 * 1000;
 
   // 1–5 segundos entre ordens dentro do mesmo ciclo
-  const MIN_BUILD_DELAY_MS = 1 * 1000;
-  const MAX_BUILD_DELAY_MS = 5 * 1000;
+  const MIN_BUILD_DELAY_MS = 500;
+  const MAX_BUILD_DELAY_MS = 1500;
 
   // Plano de upgrades (altere à vontade)
   const instructions = [
