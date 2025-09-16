@@ -1,10 +1,11 @@
 // ==UserScript==
-// @name         BR79 Grepolis – AutoStart (2s, sem reexecução, pausa, contador de refresh)
+// @name         BR79 Grepolis – AutoStart
 // @namespace    br79.grepolis.panel
 // @version      2.3.2
 // @description  Executa todos os scripts 1x (2s entre cada), sem log UI; pausa/retoma por script; contador até dar F5 automático
 // @match        https://br79.grepolis.com/*
 // @match        https://*.br79.grepolis.com/*
+// @author       Hannzo
 // @run-at       document-idle
 // @grant        GM_xmlhttpRequest
 // @grant        GM_addStyle
