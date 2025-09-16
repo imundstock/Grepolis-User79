@@ -1,14 +1,3 @@
-// ==UserScript==
-// @name         Auto Desbloquear Aldeias da Ilha Atual (Sem Botão)
-// @namespace    grepolis-helper
-// @version      1.0
-// @description  Desbloqueia automaticamente todas as aldeias da ilha da cidade atual assim que o jogo carregar. Sem botão, sem interação manual.
-// @author       Hannzo
-// @match        http://*br79.grepolis.com/game/*
-// @match        https://*br79.grepolis.com/game/*
-// @grant        none
-// ==/UserScript==
-
 (function () {
     'use strict';
 
