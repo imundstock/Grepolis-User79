@@ -1,12 +1,3 @@
-// ==UserScript==
-// @name         AutoMulti (Parar antes de aceitar CastPowerQuest)
-// @description  Para automaticamente quando a missão "Lançar um poder divino" for concluída, sem aceitá-la
-// @version      1.1.4
-// @author       Hannzo
-// @match        http://*br79.grepolis.com/game/*
-// @match        https://*br79.grepolis.com/game/*
-// ==/UserScript==
-
 (function() {
     'use strict';
 
