@@ -1,10 +1,3 @@
-// ==UserScript==
-// @name		GREPO_AutoBootcamp
-// @author      Leonardo
-// @description Piccole aggiunte
-// @include		https://*br79.grepolis.com/game/*
-// ==/UserScript==
-
 (function() {
     'use strict';
 
