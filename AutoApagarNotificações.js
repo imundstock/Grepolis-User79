@@ -3,7 +3,7 @@
 // @namespace    http://tampermonkey.net/
 // @version      1.5
 // @description  Apaga automaticamente as notificações no Grepolis clicando no "X"
-// @author       Alexandre
+// @author       Alexandre458
 // @match        http://*.grepolis.com/game/*
 // @match        https://*.grepolis.com/game/*
 // @grant        none
