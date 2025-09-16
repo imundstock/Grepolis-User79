@@ -3,7 +3,7 @@
 // @namespace    http://tampermonkey.net/
 // @version      1.0
 // @description  Farm automático nas aldeias bárbaras do Grepolis
-// @author       Adaptado por ChatGPT
+// @author       Hannzo
 // @match        https://*br79.grepolis.com/game*
 // @grant        none
 // ==/UserScript==
