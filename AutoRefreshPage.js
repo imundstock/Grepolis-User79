@@ -1,14 +1,3 @@
-// ==UserScript==
-// @name         Auto Refresh Page (Intervalo Aleatório 5–9 min)
-// @namespace    http://tampermonkey.net/
-// @version      1.0
-// @description  Atualiza a página automaticamente com intervalo aleatório entre 5 e 9 minutos (em segundos)
-// @author       Adaptado
-// @match        http://*br79.grepolis.com/game/*
-// @match        https://*br79.grepolis.com/game/*
-// @grant        none
-// ==/UserScript==
-
 (function() {
     'use strict';
 
