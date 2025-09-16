@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name         Constructor Gold (fixed)
 // @namespace    https://grepolis.com
-// @version      1.1
-// @description  Grepolis Builder com inicialização tardia e tempos corrigidos
+// @version      1.2
+// @description  Grepolis Builder com inicialização tardia e tempos corrigidos (ciclo a cada 5s)
 // @match        https://*br79.grepolis.com/game/*
 // ==/UserScript==
 
@@ -15,13 +15,13 @@
   let buildingTownGroupId = 0;
   let started = false;
 
-  // 5–10 minutos entre ciclos de construção
-  const MIN_RUN_DELAY_MS = 12 * 1000;  // 12–18s
-  const MAX_RUN_DELAY_MS = 18 * 1000;
+  // >>> Ciclo de checagem a cada ~5s (sem jitter)
+  const MIN_RUN_DELAY_MS = 5 * 1000;
+  const MAX_RUN_DELAY_MS = 5 * 1000;
 
-  // 1–5 segundos entre ordens dentro do mesmo ciclo
-  const MIN_BUILD_DELAY_MS = 500;
-  const MAX_BUILD_DELAY_MS = 1500;
+  // Intervalo entre ordens dentro do mesmo ciclo (rápido, mas com um pouco de aleatório)
+  const MIN_BUILD_DELAY_MS = 300;   // 0.3s
+  const MAX_BUILD_DELAY_MS = 800;   // 0.8s
 
   // Plano de upgrades (altere à vontade)
   const instructions = [
@@ -197,7 +197,6 @@
       const builtSomething = await buildLoopOnce();
       const delay = randInt(MIN_RUN_DELAY_MS, MAX_RUN_DELAY_MS);
       if (!builtSomething) {
-        // nada pra fazer agora; espera e tenta de novo depois
         console.log(`[ConstructorGold] Sem ordens. Aguardando ${Math.round(delay / 1000)}s…`);
       } else {
         console.log(`[ConstructorGold] Ciclo ok. Próxima checagem em ${Math.round(delay / 1000)}s…`);
@@ -225,7 +224,7 @@
       }
 
       // pequeno atraso extra pra garantir ITowns/MM prontos
-      await sleep(1000);
+      await sleep(500);
 
       runLoop();
     } catch (e) {
