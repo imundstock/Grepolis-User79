@@ -1,8 +1,9 @@
 // ==UserScript==
 // @name         Constructor Gold (fixed)
+// @description  Grepolis Builder com inicialização tardia e tempos corrigidos (ciclo a cada 5s)
 // @namespace    https://grepolis.com
 // @version      1.2
-// @description  Grepolis Builder com inicialização tardia e tempos corrigidos (ciclo a cada 5s)
+// @author       Hannzo
 // @match        https://*br79.grepolis.com/game/*
 // ==/UserScript==
 
