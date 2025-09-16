@@ -1,13 +1,3 @@
-// ==UserScript==
-// @name         AutoFarm Grepolis
-// @namespace    http://tampermonkey.net/
-// @version      1.0
-// @description  Farm automático nas aldeias bárbaras do Grepolis
-// @author       Hannzo
-// @match        https://*br79.grepolis.com/game*
-// @grant        none
-// ==/UserScript==
-
 (function () {
     'use strict';
 
