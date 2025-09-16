@@ -3,7 +3,7 @@
 // @namespace    http://tampermonkey.net/
 // @version      1.0
 // @description  Finaliza construções automaticamente quando grátis (menos de 5 minutos)
-// @author       Você
+// @author       Hannzo
 // @match        *://*.grepolis.com/game/*
 // @grant        none
 // ==/UserScript==
