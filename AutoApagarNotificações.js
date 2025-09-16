@@ -1,14 +1,3 @@
-// ==UserScript==
-// @name         AutoApagar Notificações
-// @namespace    http://tampermonkey.net/
-// @version      1.5
-// @description  Apaga automaticamente as notificações no Grepolis clicando no "X"
-// @author       Alexandre458
-// @match        http://*.grepolis.com/game/*
-// @match        https://*.grepolis.com/game/*
-// @grant        none
-// ==/UserScript==
-
 (function() {
     'use strict';
 
